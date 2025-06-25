@@ -23,7 +23,7 @@ const VoiceCloning = () => {
   const fileInputRef = useRef(null);
 
   // ChatterboxTTS API configuration
-  const CHATTERBOX_API_BASE_URL = 'http://localhost:5001/api';
+  const CHATTERBOX_API_BASE_URL = 'clonevoicebackend.vercel.app/api';
   const ALLOWED_API_ENDPOINTS = [
     `${CHATTERBOX_API_BASE_URL}/health`,
     `${CHATTERBOX_API_BASE_URL}/test-speech`,
