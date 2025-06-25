@@ -129,7 +129,7 @@ export default function TextToSpeech() {
     return (
         <div className="main">
             <button
-        onClick={() => navigate("/")}
+        onClick={() => navigate("/dashboard")}
         className="absolute top-4 left-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded shadow"
         style={{zIndex: 1000}}
       >
@@ -141,8 +141,7 @@ export default function TextToSpeech() {
                         <h1 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
                             Text to Speech Converter
                         </h1>
-                        <h6 className="text-xs font-semibold text-gray-800 mb-6 text-right">made by Bhoomika </h6>
-
+                       
                         <Textarea
                             value={text}
                             onChange={handleTextChange}

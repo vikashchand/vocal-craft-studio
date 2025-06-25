@@ -107,7 +107,7 @@ export default function TranscribeAudio() {
             <div className="min-h-screen bg-gray-30 flex items-center justify-center p-4 main">
             
       <button
-        onClick={() => navigate("/")}
+        onClick={() => navigate("/dashboard")}
         className="absolute top-4 left-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded shadow"
         style={{zIndex: 1000}}
       >

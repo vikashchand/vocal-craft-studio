@@ -1,3 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+nav {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #000;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  padding: 0 1rem;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #10667C;
+}
+
+button {
+  padding: 0.7rem 2rem;
+  font-size: 0.95rem;
+  border: none;
+  background-color: #10667C;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0d4c5a;
+}
+
+.hero {
+  background: #ffffff;
+  padding: 2rem 0;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90vh;
+  padding: 0 3rem;
+  gap: 2rem;
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 1.5rem;
+}
+
+.column-left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.column-left p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-buttons button {
+  min-width: 150px;
+}
+
+.column-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.column-right img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    padding: 0 1rem;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .nav-items {
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 0 1rem;
+  }
+
+  .column-left h1 {
+    font-size: 2rem;
+  }
+
+  .column-left p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+/* Legacy styles for existing components */
 .App {
   text-align: center;
 }
@@ -38,26 +195,20 @@
   }
 }
 
-
 .main {
-  background-image: url("./Diseno-sin-titulo-6.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  width: 100vw;
-  position: absolute;
-  /* Optional: add a semi-transparent overlay for readability */
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom, #f3ffff, #a7ffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-
 .main1 {
-  background-image: url("./Diseno-sin-titulo-6.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  /* Optional: add a semi-transparent overlay for readability */
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom, #f3ffff, #a7ffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
